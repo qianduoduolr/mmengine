@@ -170,8 +170,9 @@ def register_transformers_optimizers():
     except ImportError:
         pass
     else:
-        OPTIMIZERS.register_module(name='Adafactor', module=Adafactor)
-        transformer_optimizers.append('Adafactor')
+        # OPTIMIZERS.register_module(name='Adafactor', module=Adafactor)
+        # transformer_optimizers.append('Adafactor')
+        pass
     return transformer_optimizers
 
 
